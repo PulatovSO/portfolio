@@ -1,13 +1,21 @@
 /* GLOBAL */
 html {
   scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+:root {
+  --light: #fff;
+  --orange: #ffa500;
 }
 
 body {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -19,6 +27,138 @@ a {
 /* --------------------------------------------------------------------------------------------------- */
 
 
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+/* HOME PAGE */
+
+.menu {
+  position: fixed;
+  bottom: 0;
+}
+
+.menu__button {
+  padding: 10px 20px;
+  font-size: 32px;
+  border: none;
+  background: #ffffff36;
+  color: var(--orange);
+  cursor: pointer;
+}
 
 
+#home {
+  position: relative;
+  width: 100wh;
+  height: 100vh;
+  color: var(--light);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
 
+.home__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.466);
+  width: 100%;
+  height: 100%;
+}
+
+.home__desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home__title {
+  margin: 0;
+  font-size: 60px;
+  color: var(--light);
+}
+
+.home__title span {
+  color: var(--orange);
+}
+
+.home__slogan {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.home__socials {
+  display: flex;
+}
+
+.home__socials {
+  margin-left: 25px;
+  margin-top: 10px;
+  font-size: 32px;
+}
+
+.home__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-right: 32px;
+  color: var(--orange);
+  background: #ffffff36;
+  transition: all 0.2s ease-in-out;
+  border-radius: 50%;
+}
+
+.home__social i {
+  position: relative;
+  top: 2px;
+}
+
+.home__social:hover {
+  color: var(--light);
+}
+/* HOME PAGE */
+
+
+/* RESPONSIVENESS ################################################### */
+@media (min-aspect-ratio: 16/9) {
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+/*  ############################################################### */
+@media (max-width:768px) {
+  .home__title {
+    font-size: 32px;
+  }
+
+  .home__slogan {
+    font-size: 16px;
+    line-height: 2em;
+  }
+
+  .home__social {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .video-wrap video {
+    height: 100vh;
+  }
+}
