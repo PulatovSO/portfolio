@@ -104,10 +104,15 @@ video {
   transition: all 0.2s ease-in-out;
 }
 
-.menu__button:hover{
+.menu__button:hover,
+.home__links:hover{
   color: var(--light);
 }
 
+.home__link i {
+  position: relative;
+  top: 8px;
+}
 
 #home {
   position: relative;
