@@ -161,10 +161,10 @@ video {
   position: absolute;
   left: 50%;
   width: 100%;
-  top: 50%;
+  top: 20%;
   display: block;
   border: 15px solid red;
-  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  transform: translateX(-50%) translateY(-30%) rotate(0deg);
   animation: 10s infinite alternate ease-in-out tipsy;
 }
 
