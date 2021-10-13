@@ -264,4 +264,8 @@ video {
   .video-wrap video {
     height: 100vh;
   }
+
+  .home__title {
+    width: 70%;
+  }
 }
