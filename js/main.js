@@ -1,15 +1,28 @@
+let aboutBtn = document.querySelector('.about-hidden');
+let portfolioBtn = document.querySelector('.works-hidden')
 
-let menu = document.querySelector('home__menu');
-let menuLeft = document.querySelector('.navigation__left');
-let menuRight = document.querySelector('.navigation__right');
-
-document.querySelector('video').playbackRate = 0.7;
-
-function toggleMenu() {
-  menuLeft.classList.toggle('menu-left__show');
-  menuRight.classList.toggle('menu-right__show');
+function menuClick() {
+  let navBar = document.querySelector('.menu');
+  navBar.classList.toggle('nav-show')
 }
 
+function aboutDrag() {
+  aboutBtn.classList.toggle('show-page')
+  portfolioBtn.classList.remove('show-page')
+}
+function portfolioDrag() {
+  portfolioBtn.classList.toggle('show-page')
+  aboutBtn.classList.remove('show-page')
+
+}
+
+function homeBtn () {
+  aboutBtn.classList.remove('show-page')
+  portfolioBtn.classList.remove('show-page')
+}
+
+
+// cursor
 let cursor = document.querySelector('.cursor');
 document.addEventListener('mousemove', (e) => {
   cursor.style.left = e.pageX + 'px';

@@ -24,23 +24,124 @@
 
   <section id="home">
     <div class="cursor"></div>
-    <video id="bg-video" src="media/bg-video.mp4" muted loop autoplay></video>
     <div class="home__inner center-xs ">
-      <div class="home__links">
-        <a class="home__link" href="https://instagram.com/so.pulatoff" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
-        <a class="home__link" href="https://www.youtube.com/channel/UCWBEl6yyhx46Cl5i4aqY1VQ" target="_blank"><i class='bx bxl-youtube'></i></a>
-        <a class="home__link" href="https://telegram.me/Pulatoff7" target="_blank"><i class='bx bxl-telegram'></i></a>
-        <a class="home__link" href="https://github.com/PulatovSO" target="_blank"><i class='bx bxl-github'></i></a>
+      <!-- <button class="home__menu" onclick="menuClick()"><i class='bx bx-menu'></i></button> -->
+      <div class="home__nav menu">
+        <button class="menu__button menu__button-active" type="button" onclick="homeBtn()"><i class='bx bxs-home'></i> HOME</button>
+        <button class="menu__button" type="button" onclick="aboutDrag()"><i class='bx bxs-user-circle'></i> ABOUT</button>
+        <button class="menu__button" type="button" onclick="portfolioDrag()"><i class='bx bxs-shopping-bag-alt'></i> WORKS</button>
+        <button class="menu__button" type="button"><i class='bx bxs-envelope'></i> CONTACTS</button>
       </div>
-      <div class="home__desc">
-        <h1 class="home__title">Sirotillo Pulatov</h1>
-        <p class="home__slogan">web developer, programmer, entrepreneur</p>
+      <div class="home__text">
+        <span>I am</span>
+        <div class="home__title glitch" data-text="PULATOFF">PULATOFF</div>
+        <div class="glow">PULATOFF</div>
+        <p class="home__slogan">Web developer, programmer, freelancer</p>
+        <div class="home__links">
+          <a class="home__link" href="https://instagram.com/so.pulatoff" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+          <a class="home__link" href="https://www.youtube.com/channel/UCWBEl6yyhx46Cl5i4aqY1VQ" target="_blank"><i class='bx bxl-youtube'></i></a>
+          <a class="home__link" href="https://telegram.me/Pulatoff7" target="_blank"><i class='bx bxl-telegram'></i></a>
+          <a class="home__link" href="https://github.com/PulatovSO" target="_blank"><i class='bx bxl-github'></i></a>
+        </div>
       </div>
-      <div class="home__menu menu">
-        <button class="menu__button menu__button-active" type="button"><i class='bx bxs-home'></i></button>
-        <button class="menu__button" type="button"><i class='bx bxs-user-circle'></i></button>
-        <button class="menu__button" type="button"><i class='bx bxs-shopping-bag-alt'></i></button>
-        <button class="menu__button" type="button"><i class='bx bxs-envelope'></i></button>
+    </div>
+  </section>
+
+  <section id="about" class="about-hidden">
+    <div class=" container">
+      <h1 class="about__title title">Hello, I am Sirotillo Pulatov</h1>
+      <div class="about__inner row center-xs">
+        <div class="about__image-wrap col-xs-6">
+          <img src="img/me.jpg" alt="image" class="about__img glitch">
+        </div>
+        <div class="about__desc info col-xs-6 start-xs">
+          <h3 class="info__title">Some words abour me</h3>
+          <p class="info__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed consequatur earum hic, 
+            beatae, dolorem, maxime voluptate, veritatis iure ea assumenda est pariatur ipsa dolor 
+            molestias nam ratione modi eaque sunt expedita fugiat, vero voluptates ratione 
+            onsequatur earum hic, beatae, dolorem.
+          </p>
+          <h3 class="info__title">my skills</h3>
+          <ul class="info__list">
+            <li class="info__item">
+              <div class="info__skill"><p>html</p><span>70%</span></div>
+              <div class="info__skill-rate"><div class="skill-rate xtml"></div></div>
+            </li>
+            <li class="info__item">
+              <div class="info__skill"><p>css</p><span>80%</span></div>
+              <div class="info__skill-rate"><div class="skill-rate css"></div></div>
+            </li>
+            <li class="info__item">
+              <div class="info__skill"><p>javascript</p><span>80%</span></div>
+              <div class="info__skill-rate"><div class="skill-rate javascript"></div></div>
+            </li>
+            <li class="info__item">
+              <div class="info__skill"><p>bootstrap</p><span>70%</span></div>
+              <div class="info__skill-rate"><div class="skill-rate bootstrap"></div></div>
+            </li>
+            <li class="info__item">
+              <div class="info__skill"><p>sass</p><span>60%</span></div>
+              <div class="info__skill-rate"><div class="skill-rate sass"></div></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="works-hidden">
+    <div class="portfolio__wrap custom-container">
+      <h2 class="portfolio__title title">my portfolio</h2>
+      <div class="portfolio__projects">
+        <div class="portfolio__project project">
+          <div class="project__links">
+            <a href="https://github.com/PulatovSO/myTeam" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://modest-fermat-26d0ca.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+          </div>
+        </div>
+        <div class="portfolio__project project">
+          <div class="project__links">
+            <a href="https://github.com/PulatovSO/folio" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://folio-page.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+          </div>
+        </div>
+        <div class="portfolio__project project">
+          <div class="project__links">
+            <a href="https://github.com/PulatovSO/stark-furniture" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://starkf.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+          </div>
+        </div>
+        <div class="portfolio__project project">
+          <div class="project__links">
+            <a href="https://github.com/PulatovSO/ai-landing-page" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://artificials.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+          </div>
+        </div>
+        <div class="portfolio__project project">
+          <div class="project__links">
+            <a href="https://github.com/PulatovSO/t-pass" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://t-pass.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+          </div>
+        </div>
+        <div class="portfolio__project project">
+          <div class="project__links">
+            <a href="https://github.com/PulatovSO/laslesVPN" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://lasles-vpn-clone.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+          </div>
+        </div>
+        <div class="portfolio__project project">
+          <div class="project__links">
+            <a href="https://github.com/PulatovSO/Clerksy-landing-page" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://clerksy-page.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+          </div>
+        </div>
+        <div class="portfolio__project project">
+          <div class="project__links">
+            <a href="https://github.com/PulatovSO/signup-form" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://signup-forms.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
