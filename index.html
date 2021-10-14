@@ -17,11 +17,35 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/flexgrid.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
 
   <title>Pulatoff</title>
 </head>
 <body>
+  <section id="home">
+    <div class="cursor"></div>
+    <div class="home__inner center-xs ">
+      <button class="home__menu" onclick="menuClick()"><i class='bx bx-menu'></i></button>
+      <div class="home__nav menu">
+        <button class="menu__button menu__button-active" type="button" onclick="homeBtn()"><i class='bx bxs-home'></i></button>
+        <button class="menu__button" type="button" onclick="aboutDrag()"><i class='bx bxs-user-circle'></i></button>
+        <button class="menu__button" type="button" onclick="portfolioDrag()"><i class='bx bxs-shopping-bag-alt'></i></button>
+        <button class="menu__button" type="button" onclick="contactsDrag()"><i class='bx bxs-envelope'></i> </button>
+      </div>
+      <div class="home__text">
+        <span>I am</span>
+        <div class="home__title glitch" data-text="PULATOFF">PULATOFF</div>
+        <div class="glow">PULATOFF</div>
+        <p class="home__slogan">Web developer, programmer, freelancer</p>
+        <div class="home__links">
+          <a class="home__link" href="https://instagram.com/so.pulatoff" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+          <a class="home__link" href="https://www.youtube.com/channel/UCWBEl6yyhx46Cl5i4aqY1VQ" target="_blank"><i class='bx bxl-youtube'></i></a>
+          <a class="home__link" href="https://telegram.me/Pulatoff7" target="_blank"><i class='bx bxl-telegram'></i></a>
+          <a class="home__link" href="https://github.com/PulatovSO" target="_blank"><i class='bx bxl-github'></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="about" class="about-hidden">
     <div class=" container">
       <h1 class="about__title title">Hello, I am Sirotillo Pulatov</h1>
@@ -36,8 +60,8 @@
             responsive web sites and I am currently studying in intensive Front-end bootcamp course 
             which was establisheb by Najot Ta'lim. 
             I am really into traveling and experiencing other cultures as well as learning different 
-            languages and I am in love with cultural foods.
-          </p>
+            languages 
+            and I am in love with cultural foods.
           <h3 class="info__title">my skills</h3>
           <ul class="info__list">
             <li class="info__item">
@@ -158,8 +182,7 @@
     </div>
   </section>
 
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js"></script>
+  <script src="js/canvas.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
