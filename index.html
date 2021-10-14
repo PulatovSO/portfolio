@@ -17,36 +17,11 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/flexgrid.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
 
   <title>Pulatoff</title>
 </head>
 <body>
-
-  <section id="home">
-    <div class="cursor"></div>
-    <div class="home__inner center-xs ">
-      <button class="home__menu" onclick="menuClick()"><i class='bx bx-menu'></i></button>
-      <div class="home__nav menu">
-        <button class="menu__button menu__button-active" type="button" onclick="homeBtn()"><i class='bx bxs-home'></i></button>
-        <button class="menu__button" type="button" onclick="aboutDrag()"><i class='bx bxs-user-circle'></i></button>
-        <button class="menu__button" type="button" onclick="portfolioDrag()"><i class='bx bxs-shopping-bag-alt'></i></button>
-        <button class="menu__button" type="button"><i class='bx bxs-envelope'></i> </button>
-      </div>
-      <div class="home__text">
-        <span>I am</span>
-        <div class="home__title glitch" data-text="PULATOFF">PULATOFF</div>
-        <div class="glow">PULATOFF</div>
-        <p class="home__slogan">Web developer, programmer, freelancer</p>
-        <div class="home__links">
-          <a class="home__link" href="https://instagram.com/so.pulatoff" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
-          <a class="home__link" href="https://www.youtube.com/channel/UCWBEl6yyhx46Cl5i4aqY1VQ" target="_blank"><i class='bx bxl-youtube'></i></a>
-          <a class="home__link" href="https://telegram.me/Pulatoff7" target="_blank"><i class='bx bxl-telegram'></i></a>
-          <a class="home__link" href="https://github.com/PulatovSO" target="_blank"><i class='bx bxl-github'></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section id="about" class="about-hidden">
     <div class=" container">
       <h1 class="about__title title">Hello, I am Sirotillo Pulatov</h1>
@@ -57,10 +32,11 @@
         <div class="about__desc info col-xs-6 start-xs">
           <h3 class="info__title">Some words abour me</h3>
           <p class="info__paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed consequatur earum hic, 
-            beatae, dolorem, maxime voluptate, veritatis iure ea assumenda est pariatur ipsa dolor 
-            molestias nam ratione modi eaque sunt expedita fugiat, vero voluptates ratione 
-            onsequatur earum hic, beatae, dolorem.
+            I am Junior Front-end developer who has three month of experience in making modern and 
+            responsive web sites and I am currently studying in intensive Front-end bootcamp course 
+            which was establisheb by Najot Ta'lim. 
+            I am really into traveling and experiencing other cultures as well as learning different 
+            languages and I am in love with cultural foods.
           </p>
           <h3 class="info__title">my skills</h3>
           <ul class="info__list">
@@ -146,6 +122,44 @@
     </div>
   </section>
 
+  <section id="contacts" class="contacts-hidden">
+    <div class="contacts__wrap container row center-xs middle-xs">
+      <div class="contact__form-wrap col-md-6">
+        <form action="https://echo.htmlacademy.ru" class="contact__form form start-xs">
+          <div class="form__block">
+            <input type="text" name="name" id="name" placeholder="name" required>
+          </div>
+          <div class="form__block">
+            <input type="email" name="email" id="email" placeholder="e-mail" required>
+          </div>
+          <div class="form__block">
+            <input type="text" name="subject" id="subject" placeholder="subject" required>
+          </div>
+          <div class="form__block">
+            <textarea name="message" id="message" placeholder="message"></textarea>
+          </div>
+          <button class="contact__btn" type="submit">send message</button>
+        </form>
+      </div>
+      <div class="contacts__desc col-md-6 start-xs">
+        <h2 class="contacts__title title">FEEL FREE TO CONTACT WITH ME!</h2>
+        <p class="contacts__paragraph paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Voluptate dolores, quasi unde quisquam facilis at ullam 
+          aperiam similique dicta voluptatibus!
+        </p>
+        <ul class="contacts__list">
+          <li class="contacts__item"><i class='bx bxs-phone'></i> +998 94 300 40 55</li>
+          <li class="contacts__item"><i class='bx bxs-envelope' ></i> Pulatovsirotilo@gmail.com</li>
+          <li class="contacts__item"><i class='bx bx-time'></i> Mon-Fri 7:00 AM - 6:00 PM</li>
+          <li class="contacts__item"><i class='bx bxs-map-pin'></i> Example Street 01, 61-000 Poznan, Poland</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

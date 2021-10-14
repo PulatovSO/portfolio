@@ -38,40 +38,68 @@ button {
 }
 
 /* CURSOR ANIMATION ################################################################## */
+
 .cursor {
-  position: fixed;
-  width: 30px;
-  height: 30px;
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
   border-radius: 50%;
-  border: 3px solid magenta;
-  transform: translate(-50%, -50%);
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  /* animation: cursorAnim .5s infinite alternate; */
   pointer-events: none;
-  transition: 0.2s;
-  z-index: 10;
+  z-index: 999;
 }
 
-.expand {
-  animation: cursorAnim 0.5s forwards;
-  box-shadow: 0px 0px 16px 10px magrnta;
-  /* border: 1px solid #fff; */
+.cursor::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: 8px solid magenta;
+  border-radius: 50%;
+  opacity: .5;
+  top: -18px;
+  left: -18px;
+  animation: cursorAnim2 1s infinite alternate;
 }
 
 @keyframes cursorAnim {
-  0% {
-    transform: scale(1);
-    background: magenta;
+  from {
+      transform: scale(1);
   }
-  50% {
-    transform: scale(2);
-    background: lightgreen;
-    border-color: lightgreen;
-
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0;
+  to {
+      transform: scale(.7);
   }
 }
+
+@keyframes cursorAnim2 {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(.4);
+  }
+}
+
+@keyframes cursorAnim3 {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(3);
+  }
+  100% {
+      transform: scale(1);
+      opacity: 0;
+  }
+}
+
+.expand {
+  animation: cursorAnim3 .5s forwards;
+}
+
 
 /* HOME PAGE ###################################################### */
 
@@ -83,6 +111,7 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 300px center;
+
 }
 
 .home__inner {
@@ -269,6 +298,9 @@ button {
 
 
 /* ABOUT PAGE ###################################################### */
+#about {
+  position: absolute;
+}
 .about-hidden {
   display: flex;
   justify-content: center;
@@ -481,7 +513,129 @@ button {
 
 /* /PORTFOLIO PAGE ###################################################### */
 
+/* CONTACTS PAGE ###################################################### */
+.contacts-hidden {
+  position: absolute;
+  top: 0;
+  right: -100vw;
+  background: #000000;
+  width: 100vw;
+  height: 100vh;
+  z-index: 6;
+  transition: all 0.3s ease-in-out;
+}
 
+.contacts__wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.contact__form {
+  padding: 50px;
+  position: relative;
+  left: 60%;
+  transform: translateX(-50%);
+  background: #000;
+  width: 500px;
+  height: 400px;
+  color: #979797;
+  filter: drop-shadow(-10px -10px lightgreen);
+  box-shadow: 10px 10px magenta;
+}
+
+.form__block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.form__block input::placeholder {
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.form__block input {
+  padding: 5px;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #717171;
+}
+
+.form__block textarea {
+  height: 145px;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #717171;
+}
+
+textarea::placeholder {
+  color: #fff;
+}
+
+.contact__btn {
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  background: #000;
+  /* border: 1px solid #fff; */
+  color: #fff;
+  filter: drop-shadow(-1px -1px magenta);
+  box-shadow: 1px 1px lightgreen;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact__btn:hover {
+  border: none;
+  filter: drop-shadow(4px 4px magenta);
+  box-shadow: -4px -4px lightgreen;
+}
+
+.contacts__desc {
+  padding: 20px;
+  padding-left: 60px;
+  color: #fff;
+}
+
+.contacts__title {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.contacts__paragraph {
+  max-width: 400px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 2em;
+}
+
+.contacts__item {
+  margin-bottom: 22px;
+}
+
+.contacts__item i {
+  background: #000;
+  color: #fff;
+  padding: 16px;
+  margin-right: 15px;
+  font-size: 22px;
+  filter: drop-shadow(-1px -1px magenta);
+  box-shadow: 1px 1px lightgreen;
+}
+
+/* /CONTACTS PAGE ###################################################### */
 
 /* ======================================== */
 
@@ -498,8 +652,24 @@ button {
 @media (max-width: 992px) {
 
 
+
+  /* HOME ###################### */
+  /* /HOME ###################### */
+
+  /* ABOUT ###################### */
+  #about {
+    position: unset;
+  }
+  /* /ABOUT ###################### */
+
   /* PORTFOLIO ###################### */
-
-
+  .works-hidden {
+    position: unset;
+    width: 100vw;
+    height: 100vh;
+  }
   /* /PORTFOLIO ###################### */
+  
+  /* CONTACTS ###################### */
+  /* /CONTACTS ###################### */
 }
