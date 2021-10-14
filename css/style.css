@@ -115,7 +115,7 @@ button {
   padding: 0;
   position: absolute;
   top: -170px;
-  right: 8px;
+  right: 10px;
   transform: translateY(-50%);
   background: transparent;
   transition: all 0.2s ease-in-out;
