@@ -3,8 +3,9 @@ let portfolioBtn = document.querySelector('.works-hidden')
 let contactsBtn = document.querySelector('.contacts-hidden')
 
 function menuClick() {
-  let navBar = document.querySelector('.menu');
-  navBar.classList.toggle('nav-show')
+  let homeShow = document.querySelector('.home-button')
+  homeShow.classList.remove('home-btn')
+  homeShow.classList.toggle('home-btn-show')
 }
 
 function aboutDrag() {
@@ -42,5 +43,13 @@ document.addEventListener('click', () => {
     setTimeout(() => {
         cursor.classList.remove("expand");
     }, 500)
+})
+
+new fullpage('#fullpage', {
+  autoscrolling: true,
+  controlArrows: false,
+  anchors: ['section1', 'section2', 'section3', 'section4'],
+  // responsiveHeight: 300,
+  responsiveWidth: 300
 })
 

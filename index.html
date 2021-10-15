@@ -17,172 +17,214 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/flexgrid.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
 
   <title>Pulatoff</title>
 </head>
 <body>
-  <section id="home">
-    <div class="cursor"></div>
-    <div class="home__inner center-xs ">
-      <button class="home__menu" onclick="menuClick()"><i class='bx bx-menu'></i></button>
-      <div class="home__nav menu">
-        <button class="menu__button menu__button-active" type="button" onclick="homeBtn()"><i class='bx bxs-home'></i></button>
-        <button class="menu__button" type="button" onclick="aboutDrag()"><i class='bx bxs-user-circle'></i></button>
-        <button class="menu__button" type="button" onclick="portfolioDrag()"><i class='bx bxs-shopping-bag-alt'></i></button>
-        <button class="menu__button" type="button" onclick="contactsDrag()"><i class='bx bxs-envelope'></i> </button>
-      </div>
-      <div class="home__text">
-        <span>I am</span>
-        <div class="home__title glitch" data-text="PULATOFF">PULATOFF</div>
-        <div class="glow">PULATOFF</div>
-        <p class="home__slogan">Web developer, programmer, freelancer</p>
-        <div class="home__links">
-          <a class="home__link" href="https://instagram.com/so.pulatoff" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
-          <a class="home__link" href="https://www.youtube.com/channel/UCWBEl6yyhx46Cl5i4aqY1VQ" target="_blank"><i class='bx bxl-youtube'></i></a>
-          <a class="home__link" href="https://telegram.me/Pulatoff7" target="_blank"><i class='bx bxl-telegram'></i></a>
-          <a class="home__link" href="https://github.com/PulatovSO" target="_blank"><i class='bx bxl-github'></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="about" class="about-hidden">
-    <div class=" container">
-      <h1 class="about__title title">Hello, I am Sirotillo Pulatov</h1>
-      <div class="about__inner row center-xs">
-        <div class="about__image-wrap col-xs-6">
-          <img src="img/me.jpg" alt="image" class="about__img glitch">
-        </div>
-        <div class="about__desc info col-xs-6 start-xs">
-          <h3 class="info__title">Some words abour me</h3>
-          <p class="info__paragraph">
-            I am Junior Front-end developer who has three month of experience in making modern and 
-            responsive web sites and I am currently studying in intensive Front-end bootcamp course 
-            which was establisheb by Najot Ta'lim. 
-            I am really into traveling and experiencing other cultures as well as learning different 
-            languages 
-            and I am in love with cultural foods.
-          <h3 class="info__title">my skills</h3>
-          <ul class="info__list">
-            <li class="info__item">
-              <div class="info__skill"><p>html</p><span>70%</span></div>
-              <div class="info__skill-rate"><div class="skill-rate xtml"></div></div>
-            </li>
-            <li class="info__item">
-              <div class="info__skill"><p>css</p><span>80%</span></div>
-              <div class="info__skill-rate"><div class="skill-rate css"></div></div>
-            </li>
-            <li class="info__item">
-              <div class="info__skill"><p>javascript</p><span>80%</span></div>
-              <div class="info__skill-rate"><div class="skill-rate javascript"></div></div>
-            </li>
-            <li class="info__item">
-              <div class="info__skill"><p>bootstrap</p><span>70%</span></div>
-              <div class="info__skill-rate"><div class="skill-rate bootstrap"></div></div>
-            </li>
-            <li class="info__item">
-              <div class="info__skill"><p>sass</p><span>60%</span></div>
-              <div class="info__skill-rate"><div class="skill-rate sass"></div></div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+  <div class="cursor"></div>
+  <div id="fullpage">
 
-  <section id="portfolio" class="works-hidden">
-    <div class="portfolio__wrap custom-container">
-      <h2 class="portfolio__title title">my portfolio</h2>
-      <div class="portfolio__projects">
-        <div class="portfolio__project project">
-          <div class="project__links">
-            <a href="https://github.com/PulatovSO/myTeam" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://modest-fermat-26d0ca.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+    <div class="section home-section">
+      <section id="home">
+        <div class="home__inner center-xs ">
+          <button class="home__menu" onclick="menuClick()"><i class='bx bx-menu'></i></button>
+          <div class="home__nav menu">
+            <a class="menu__button home-button home-btnshow" onclick="homeBtn()"><i class='bx bxs-home'></i></a>
+            <a class="menu__button about-button"  onclick="aboutDrag()"><i class='bx bxs-user-circle'></i></a>
+            <a class="menu__button portfolio-button"  onclick="portfolioDrag()"><i class='bx bxs-shopping-bag-alt'></i></a>
+            <a class="menu__button contact-button"  onclick="contactsDrag()"><i class='bx bxs-envelope'></i> </a>
+          </div>
+          <div class="home__text">
+            <span>I am</span>
+            <div class="home__title glitch" data-text="PULATOFF">PULATOFF</div>
+            <div class="glow">PULATOFF</div>
+            <p class="home__slogan">Web developer, programmer, freelancer</p>
+            <div class="home__links">
+              <a class="home__link" href="https://instagram.com/so.pulatoff" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+              <a class="home__link" href="https://www.youtube.com/channel/UCWBEl6yyhx46Cl5i4aqY1VQ" target="_blank"><i class='bx bxl-youtube'></i></a>
+              <a class="home__link" href="https://telegram.me/Pulatoff7" target="_blank"><i class='bx bxl-telegram'></i></a>
+              <a class="home__link" href="https://github.com/PulatovSO" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
           </div>
         </div>
-        <div class="portfolio__project project">
-          <div class="project__links">
-            <a href="https://github.com/PulatovSO/folio" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://folio-page.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
-          </div>
-        </div>
-        <div class="portfolio__project project">
-          <div class="project__links">
-            <a href="https://github.com/PulatovSO/stark-furniture" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://starkf.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
-          </div>
-        </div>
-        <div class="portfolio__project project">
-          <div class="project__links">
-            <a href="https://github.com/PulatovSO/ai-landing-page" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://artificials.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
-          </div>
-        </div>
-        <div class="portfolio__project project">
-          <div class="project__links">
-            <a href="https://github.com/PulatovSO/t-pass" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://t-pass.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
-          </div>
-        </div>
-        <div class="portfolio__project project">
-          <div class="project__links">
-            <a href="https://github.com/PulatovSO/laslesVPN" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://lasles-vpn-clone.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
-          </div>
-        </div>
-        <div class="portfolio__project project">
-          <div class="project__links">
-            <a href="https://github.com/PulatovSO/Clerksy-landing-page" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://clerksy-page.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
-          </div>
-        </div>
-        <div class="portfolio__project project">
-          <div class="project__links">
-            <a href="https://github.com/PulatovSO/signup-form" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://signup-forms.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
-  </section>
 
-  <section id="contacts" class="contacts-hidden">
-    <div class="contacts__wrap container row center-xs middle-xs">
-      <div class="contact__form-wrap col-md-6">
-        <form action="https://echo.htmlacademy.ru" class="contact__form form start-xs">
-          <div class="form__block">
-            <input type="text" name="name" id="name" placeholder="name" required>
+    <div id="about-section" class="section">
+      <section id="about" class="about-hidden">
+        <div class=" container">
+          <div class="boxes">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
-          <div class="form__block">
-            <input type="email" name="email" id="email" placeholder="e-mail" required>
+          <h1 class="about__title title">Hello, I am Sirotillo Pulatov</h1>
+          <div class="about__inner row center-xs">
+            <div class="about__image-wrap col-xs-12 col-md-6">
+              <img src="img/me.jpg" alt="image" class="about__img glitch">
+            </div>
+            <div class="about__desc info col-xs-12 col-md-6 start-xs">
+              <div class="info__wrap">
+                <h3 class="info__title">Some words about me</h3>
+                <p class="info__paragraph">
+                  I am Junior Front-end developer who has three month of experience in making modern and 
+                  responsive web sites and I am currently studying in intensive Front-end bootcamp course 
+                  which was establisheb by Najot Ta'lim. 
+                  I am really into traveling and experiencing other cultures as well as learning different 
+                  languages 
+                  and I am in love with cultural foods.
+                </p>
+                <h3 class="info__title info__list-title">my skills</h3>
+                <ul class="info__list">
+                  <li class="info__item">
+                    <div class="info__skill"><p>html</p><span>70%</span></div>
+                    <div class="info__skill-rate"><div class="skill-rate xtml"></div></div>
+                  </li>
+                  <li class="info__item">
+                    <div class="info__skill"><p>css</p><span>80%</span></div>
+                    <div class="info__skill-rate"><div class="skill-rate css"></div></div>
+                  </li>
+                  <li class="info__item">
+                    <div class="info__skill"><p>javascript</p><span>80%</span></div>
+                    <div class="info__skill-rate"><div class="skill-rate javascript"></div></div>
+                  </li>
+                  <li class="info__item">
+                    <div class="info__skill"><p>bootstrap</p><span>70%</span></div>
+                    <div class="info__skill-rate"><div class="skill-rate bootstrap"></div></div>
+                  </li>
+                  <li class="info__item">
+                    <div class="info__skill"><p>sass</p><span>60%</span></div>
+                    <div class="info__skill-rate"><div class="skill-rate sass"></div></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="form__block">
-            <input type="text" name="subject" id="subject" placeholder="subject" required>
-          </div>
-          <div class="form__block">
-            <textarea name="message" id="message" placeholder="message"></textarea>
-          </div>
-          <button class="contact__btn" type="submit">send message</button>
-        </form>
-      </div>
-      <div class="contacts__desc col-md-6 start-xs">
-        <h2 class="contacts__title title">FEEL FREE TO CONTACT WITH ME!</h2>
-        <p class="contacts__paragraph paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          Voluptate dolores, quasi unde quisquam facilis at ullam 
-          aperiam similique dicta voluptatibus!
-        </p>
-        <ul class="contacts__list">
-          <li class="contacts__item"><i class='bx bxs-phone'></i> +998 94 300 40 55</li>
-          <li class="contacts__item"><i class='bx bxs-envelope' ></i> Pulatovsirotilo@gmail.com</li>
-          <li class="contacts__item"><i class='bx bx-time'></i> Mon-Fri 7:00 AM - 6:00 PM</li>
-          <li class="contacts__item"><i class='bx bxs-map-pin'></i> Example Street 01, 61-000 Poznan, Poland</li>
-        </ul>
-      </div>
+        </div>
+      </section>
     </div>
-  </section>
 
-  <script src="js/canvas.js"></script>
+    <div class="section portfolio-section">
+      <section id="portfolio" class="works-hidden">
+        <div class="portfolio__wrap custom-container">
+          <h2 class="portfolio__title title">my portfolio</h2>
+          <div class="portfolio__projects">
+            <div class="portfolio__project project">
+              <div class="project__links">
+                <a href="https://github.com/PulatovSO/myTeam" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://modest-fermat-26d0ca.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+              </div>
+            </div>
+            <div class="portfolio__project project">
+              <div class="project__links">
+                <a href="https://github.com/PulatovSO/folio" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://folio-page.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+              </div>
+            </div>
+            <div class="portfolio__project project">
+              <div class="project__links">
+                <a href="https://github.com/PulatovSO/stark-furniture" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://starkf.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+              </div>
+            </div>
+            <div class="portfolio__project project">
+              <div class="project__links">
+                <a href="https://github.com/PulatovSO/ai-landing-page" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://artificials.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+              </div>
+            </div>
+            <div class="portfolio__project project">
+              <div class="project__links">
+                <a href="https://github.com/PulatovSO/t-pass" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://t-pass.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+              </div>
+            </div>
+            <div class="portfolio__project project">
+              <div class="project__links">
+                <a href="https://github.com/PulatovSO/laslesVPN" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://lasles-vpn-clone.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+              </div>
+            </div>
+            <div class="portfolio__project project">
+              <div class="project__links">
+                <a href="https://github.com/PulatovSO/Clerksy-landing-page" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://clerksy-page.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+              </div>
+            </div>
+            <div class="portfolio__project project">
+              <div class="project__links">
+                <a href="https://github.com/PulatovSO/signup-form" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://signup-forms.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="section contacts-section">
+      <div class="circles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <section id="contacts" class="contacts-hidden">
+        <div class="contacts__wrap container row center-xs middle-xs">
+          <div class="contact__form-wrap col-xs-12 col-md-6">
+            <form action="https://echo.htmlacademy.ru" class="contact__form form start-xs">
+              <div class="form__block">
+                <input type="text" name="name" id="name" placeholder="name" required>
+              </div>
+              <div class="form__block">
+                <input type="email" name="email" id="email" placeholder="e-mail" required>
+              </div>
+              <div class="form__block">
+                <input type="text" name="subject" id="subject" placeholder="subject" required>
+              </div>
+              <div class="form__block">
+                <textarea name="message" id="message" placeholder="message"></textarea>
+              </div>
+              <button class="contact__btn" type="submit">send message</button>
+            </form>
+          </div>
+          <div class="contacts__desc col-xs-12 col-md-6 start-xs">
+            <h2 class="contacts__title title">FEEL FREE TO CONTACT WITH ME!</h2>
+            <p class="contacts__paragraph paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              Voluptate dolores, quasi unde quisquam facilis at ullam 
+              aperiam similique dicta voluptatibus!
+            </p>
+            <ul class="contacts__list">
+              <li class="contacts__item"><i class='bx bxs-phone'></i> +998 94 300 40 55</li>
+              <li class="contacts__item"><i class='bx bxs-envelope' ></i> Pulatovsirotilo@gmail.com</li>
+              <li class="contacts__item"><i class='bx bx-time'></i> Mon-Fri 7:00 AM - 6:00 PM</li>
+              <li class="contacts__item"><i class='bx bxs-map-pin'></i> Example Street 01, 61-000 Poznan, Poland</li>
+            </ul>
+          </div>
+          <small class="contacts__copyright"> 2021 &copy; All right reserved</small>
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
