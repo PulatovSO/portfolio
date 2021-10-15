@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="css/flexgrid.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
   <title>Pulatoff</title>
 </head>
@@ -146,6 +147,79 @@
         </div>
         <div class="portfolio__wrap custom-container">
           <h2 class="portfolio__title title">my portfolio</h2>
+          <!-- Swiper -->
+          <div class="portfolio__swiper">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="portfolio__project project">
+                    <div class="project__links">
+                      <a href="https://github.com/PulatovSO/myTeam" target="_blank"><i class='bx bxl-github'></i></a>
+                      <a href="https://modest-fermat-26d0ca.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio__project project">
+                    <div class="project__links">
+                      <a href="https://github.com/PulatovSO/folio" target="_blank"><i class='bx bxl-github'></i></a>
+                      <a href="https://folio-page.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio__project project">
+                    <div class="project__links">
+                      <a href="https://github.com/PulatovSO/stark-furniture" target="_blank"><i class='bx bxl-github'></i></a>
+                      <a href="https://starkf.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio__project project">
+                    <div class="project__links">
+                      <a href="https://github.com/PulatovSO/ai-landing-page" target="_blank"><i class='bx bxl-github'></i></a>
+                      <a href="https://artificials.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio__project project">
+                    <div class="project__links">
+                      <a href="https://github.com/PulatovSO/t-pass" target="_blank"><i class='bx bxl-github'></i></a>
+                      <a href="https://t-pass.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio__project project">
+                    <div class="project__links">
+                      <a href="https://github.com/PulatovSO/laslesVPN" target="_blank"><i class='bx bxl-github'></i></a>
+                      <a href="https://lasles-vpn-clone.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio__project project">
+                    <div class="project__links">
+                      <a href="https://github.com/PulatovSO/Clerksy-landing-page" target="_blank"><i class='bx bxl-github'></i></a>
+                      <a href="https://clerksy-page.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio__project project">
+                    <div class="project__links">
+                      <a href="https://github.com/PulatovSO/signup-form" target="_blank"><i class='bx bxl-github'></i></a>
+                      <a href="https://signup-forms.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <!-- /Swiper -->
           <div class="portfolio__projects">
             <div class="portfolio__project project">
               <div class="project__links">
@@ -257,5 +331,26 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js"></script>
   <script src="js/main.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cube",
+        grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+  </script>
+
 </body>
 </html>

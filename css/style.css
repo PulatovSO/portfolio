@@ -583,6 +583,10 @@ button {
   transform: translate(-50%, -50%);
 }
 
+.portfolio__swiper {
+  display: none;
+}
+
 .works-hidden {
   width: 100vw;
   height: 100vh;
@@ -612,27 +616,35 @@ button {
   position: relative;
 }
 
+.swiper-slide:nth-child(1) .portfolio__project,
 .portfolio__project:nth-child(1) {
   background-image: url(../img/work1.png);
 }
+.swiper-slide:nth-child(2) .portfolio__project,
 .portfolio__project:nth-child(2) {
   background-image: url(../img/work2.png);
 }
+.swiper-slide:nth-child(3) .portfolio__project,
 .portfolio__project:nth-child(3) {
   background-image: url(../img/work3.png);
 }
+.swiper-slide:nth-child(4) .portfolio__project,
 .portfolio__project:nth-child(4) {
   background-image: url(../img/work4.png);
 }
+.swiper-slide:nth-child(5) .portfolio__project,
 .portfolio__project:nth-child(5) {
   background-image: url(../img/work5.png);
 }
+.swiper-slide:nth-child(6) .portfolio__project,
 .portfolio__project:nth-child(6) {
   background-image: url(../img/work6.png);
 }
+.swiper-slide:nth-child(7) .portfolio__project,
 .portfolio__project:nth-child(7) {
   background-image: url(../img/work7.png);
 }
+.swiper-slide:nth-child(8) .portfolio__project,
 .portfolio__project:nth-child(8) {
   background-image: url(../img/work8.png);
 }
@@ -920,7 +932,6 @@ textarea::placeholder {
   /* /PORTFOLIO ###################### */
   
   /* CONTACTS ###################### */
-
   .contacts__wrap {
     /* border: 1px solid red; */
     width: 80%;
@@ -953,7 +964,50 @@ textarea::placeholder {
     margin-bottom: 50px;
   }
 
+  /* PORTFOLIO ###################### */
+  
   .portfolio__projects {
+    display: none;
+  }
+
+  .portfolio__swiper {
+    display: unset;
+  }
+
+  .swiper {
+    width: 300px;
+    height: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    border: 1px solid red;
+  }
+  
+  .swiper-slide .portfolio__project {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide .portfolio__project::before {
+    width: 100%;
+    height: 500px;
+  }
+  .swiper-slide .portfolio__project::after {
+    width: 100%;
+    height: 500px;
+  } */
+
+
+  /* /PORTFOLIO ###################### */
+
+  /* .portfolio__projects {
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -974,7 +1028,7 @@ textarea::placeholder {
   .portfolio__project::after {
     width: 220px;
     height: 500px;
-  }
+  } */
 
   /* CONTACTS */
   .contacts__desc {
