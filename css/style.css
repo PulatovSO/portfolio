@@ -129,93 +129,126 @@ button {
   right: 20px;
   font-size: 32px;
   background: none;
-  color: #fff;
   border: none;
   z-index: 50;
+  transition: all 0.5s ease-in-out;
 }
 
-.home__menu::after {
-  content: '';
+.menu__bg {
+  width: 0;
+  height: 0;
   display: inline-block;
   position: absolute;
-  width: 100px;
-  height: 100px;
-  top: -120px;
-  right: -150px;
+  top: 20px;
+  right: 20px;
+  transform: translate(47%, -49%);
+  background: rgba(255, 0, 255, 0.158);
   border-radius: 50%;
-  color: #fff;
-  background: rgba(255, 0, 255, 0.267);
-  right: -110px;
+  transition: all 0.1s ease-in-out;
 }
+
+.menu-bg-show {
+  width: 400px;
+  height: 400px;
+}
+
+.menu__line {
+  margin-bottom: 4px;
+  width: 30px;
+  height: 5px;
+  background: #fff;
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+}
+
+.open {
+  top: 25px;
+  right: 25px;
+}
+.top-anim {
+  transform: rotate(40deg) translateX(14px);
+}
+.bottom-anim {
+  transform: rotate(-40deg) translateX(14px);
+}
+.middle-anim {
+  transform: translateX(50px);
+  opacity: 0;
+}
+
 
 .home__nav {
   position: absolute;
   top: 0;
   right: 0;
   font-size: 32px;
-  display: none;
 }
 
 .menu__button {
+  display: flex;
   background: none;
   color: #fff;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
 }
 
-.menu__button:nth-child(1) {
+.menu__button:hover {
+  cursor: pointer;
+}
+
+.menu__button span {
+  position: relative;
+  top: 7px;
+  left: 3px;
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu__button:hover span {
+  font-size: 16px;
+}
+
+.home-button {
   position: absolute;
   top: 20px;
-  right: 120px;
+  right: 20px;
 }
-
-.menu__button:nth-child(2) {
+.about-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.portfolio-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.contact-button {
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
-.menu__button:nth-child(3) {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+.home-btn-show {
+  right: 155px;
+  opacity: 1;
 }
-
-.menu__button:nth-child(4) {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.home-btnshow {
-  position: absolute;
-  top: 20px;
-  right: 160px;
-}
-
 .about-btn-show {
-  position: absolute;
   top: 80px;
   right: 140px;
+  opacity: 1;
 }
-
 .portfolio-btn-show {
-  position: absolute;
   top: 130px;
-  right: 90px;
+  right: 70px;
+  opacity: 1;
 }
-
 .contact-btn-show {
-  position: absolute;
-  top: 150px;
+  top: 170px;
   right: 20px;
+  opacity: 1;
 }
-
-
-
-.nav-show {
-  top: 190px;
-}
-
-
 
 /* ----------------- */
 
@@ -553,7 +586,8 @@ button {
 .works-hidden {
   width: 100vw;
   height: 100vh;
-  background: #000;
+  position: relative;
+  background: #000000;
   color: var(--light);
   transition: all 0.3s ease-in-out;
 }
@@ -801,6 +835,47 @@ textarea::placeholder {
 /* RESPONSIVENESS ########################################################## */
 
 @media (max-width: 992px) {
+
+  /* MENU ###################### */
+
+  .menu__button span {
+    display: none;
+  }
+
+  .home-btn-show {
+    top: 19px;
+    right: 260px;
+    opacity: 1;
+  }
+  .about-btn-show {
+    top: 20px;
+    right: 195px;
+    opacity: 1;
+  }
+  .portfolio-btn-show {
+    top: 20px;
+    right: 130px;
+    opacity: 1;
+  }
+  .contact-btn-show {
+    top: 20px;
+    right: 65px;
+    opacity: 1;
+  }
+
+  .menu__bg {
+    top: 20px;
+    right: 20px;
+    border-radius: 100px;
+  }
+  
+  .menu-bg-show {
+    width: 600px;
+    height: 120px;
+  }
+  
+  /* MENU ###################### */
+
 
   /* HOME ###################### */
   #home {

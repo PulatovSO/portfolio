@@ -1,33 +1,25 @@
-let aboutBtn = document.querySelector('.about-hidden');
-let portfolioBtn = document.querySelector('.works-hidden')
-let contactsBtn = document.querySelector('.contacts-hidden')
+
+let menuBtn = document.querySelector('.home__menu');
+let topLine = document.querySelector('.line-top');
+let middleLine = document.querySelector('.line-middle');
+let bottomLine = document.querySelector('.line-bottom');
+
+let homeBtn = document.querySelector('.home-button');
+let aboutBtn = document.querySelector('.about-button');
+let portfolioBtn = document.querySelector('.portfolio-button');
+let contactBtn = document.querySelector('.contact-button');
+let menuBg = document.querySelector('.menu__bg')
 
 function menuClick() {
-  let homeShow = document.querySelector('.home-button')
-  homeShow.classList.remove('home-btn')
-  homeShow.classList.toggle('home-btn-show')
-}
-
-function aboutDrag() {
-  aboutBtn.classList.toggle('show-page')
-  portfolioBtn.classList.remove('show-page')
-  contactsBtn.classList.remove('show-page')
-}
-function portfolioDrag() {
-  portfolioBtn.classList.toggle('show-page')
-  aboutBtn.classList.remove('show-page')
-  contactsBtn.classList.remove('show-page')
-}
-function contactsDrag() {
-  aboutBtn.classList.remove('show-page')
-  portfolioBtn.classList.remove('show-page')
-  contactsBtn.classList.toggle('show-page')
-}
-
-function homeBtn () {
-  aboutBtn.classList.remove('show-page')
-  portfolioBtn.classList.remove('show-page')
-  contactsBtn.classList.remove('show-page')
+  menuBtn.classList.toggle('open');
+  topLine.classList.toggle('top-anim');
+  middleLine.classList.toggle('middle-anim');
+  bottomLine.classList.toggle('bottom-anim');
+  homeBtn.classList.toggle('home-btn-show')
+  aboutBtn.classList.toggle('about-btn-show')
+  portfolioBtn.classList.toggle('portfolio-btn-show')
+  contactBtn.classList.toggle('contact-btn-show')
+  menuBg.classList.toggle('menu-bg-show')
 }
 
 
@@ -52,4 +44,3 @@ new fullpage('#fullpage', {
   // responsiveHeight: 300,
   responsiveWidth: 300
 })
-

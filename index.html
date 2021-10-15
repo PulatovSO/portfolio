@@ -17,8 +17,6 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/flexgrid.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.css" integrity="sha512-VMyF2fc2AX1KdbrqVUbeTWZxHmNThygdqsmZXqvg7hN3M3rgtzSQE+Vo4YtKRDexB0VDap5tiIwGVEmUA4Y1VA==" crossorigin="anonymous"/>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
 
   <title>Pulatoff</title>
@@ -30,17 +28,34 @@
 
     <div class="section home-section">
       <section id="home">
+        <div class="boxes">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <div class="home__inner center-xs ">
-          <button class="home__menu" onclick="menuClick()"><i class='bx bx-menu'></i></button>
-          <div class="home__nav menu">
-            <a class="menu__button home-button home-btnshow" onclick="homeBtn()"><i class='bx bxs-home'></i></a>
-            <a class="menu__button about-button"  onclick="aboutDrag()"><i class='bx bxs-user-circle'></i></a>
-            <a class="menu__button portfolio-button"  onclick="portfolioDrag()"><i class='bx bxs-shopping-bag-alt'></i></a>
-            <a class="menu__button contact-button"  onclick="contactsDrag()"><i class='bx bxs-envelope'></i> </a>
+          <div class="menu__bg"></div>
+          <button class="home__menu menu" onclick="menuClick()">
+            <div class="menu__line line-top"></div>
+            <div class="menu__line line-middle"></div>
+            <div class="menu__line line-bottom"></div>
+          </button>
+          <div class="home__nav">
+            <a class="menu__button home-button" onclick="homeBtn()"><i class='bx bxs-home'></i><span>home</span></a>
+            <a class="menu__button about-button"  onclick="aboutDrag()"><i class='bx bxs-user-circle'></i><span>about</span></a>
+            <a class="menu__button portfolio-button"  onclick="portfolioDrag()"><i class='bx bxs-shopping-bag-alt'></i><span>portfolio</span></a>
+            <a class="menu__button contact-button"  onclick="contactsDrag()"><i class='bx bxs-envelope'></i><span>contacts</span></a>
           </div>
           <div class="home__text" >
             <span>I am</span>
-            <div class="home__title glitch" data-aos="fade-right" data-text="PULATOFF">PULATOFF</div>
+            <div class="home__title glitch" data-text="PULATOFF">PULATOFF</div>
             <div class="glow" >PULATOFF</div>
             <p class="home__slogan">Web developer, programmer, freelancer</p>
             <div class="home__links">
@@ -117,6 +132,18 @@
 
     <div class="section portfolio-section">
       <section id="portfolio" class="works-hidden">
+        <div class="boxes">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <div class="portfolio__wrap custom-container">
           <h2 class="portfolio__title title">my portfolio</h2>
           <div class="portfolio__projects">
@@ -230,12 +257,5 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js"></script>
   <script src="js/main.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-          offset: 200,
-          duration: 1000
-      });
-    </script>
 </body>
 </html>
