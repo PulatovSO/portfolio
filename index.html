@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/flexgrid.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.css" integrity="sha512-VMyF2fc2AX1KdbrqVUbeTWZxHmNThygdqsmZXqvg7hN3M3rgtzSQE+Vo4YtKRDexB0VDap5tiIwGVEmUA4Y1VA==" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
 
   <title>Pulatoff</title>
@@ -36,10 +38,10 @@
             <a class="menu__button portfolio-button"  onclick="portfolioDrag()"><i class='bx bxs-shopping-bag-alt'></i></a>
             <a class="menu__button contact-button"  onclick="contactsDrag()"><i class='bx bxs-envelope'></i> </a>
           </div>
-          <div class="home__text">
+          <div class="home__text" >
             <span>I am</span>
-            <div class="home__title glitch" data-text="PULATOFF">PULATOFF</div>
-            <div class="glow">PULATOFF</div>
+            <div class="home__title glitch" data-aos="fade-right" data-text="PULATOFF">PULATOFF</div>
+            <div class="glow" >PULATOFF</div>
             <p class="home__slogan">Web developer, programmer, freelancer</p>
             <div class="home__links">
               <a class="home__link" href="https://instagram.com/so.pulatoff" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
@@ -204,18 +206,20 @@
             </form>
           </div>
           <div class="contacts__desc col-xs-12 col-md-6 start-xs">
-            <h2 class="contacts__title title">FEEL FREE TO CONTACT WITH ME!</h2>
-            <p class="contacts__paragraph paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Voluptate dolores, quasi unde quisquam facilis at ullam 
-              aperiam similique dicta voluptatibus!
-            </p>
-            <ul class="contacts__list">
-              <li class="contacts__item"><i class='bx bxs-phone'></i> +998 94 300 40 55</li>
-              <li class="contacts__item"><i class='bx bxs-envelope' ></i> Pulatovsirotilo@gmail.com</li>
-              <li class="contacts__item"><i class='bx bx-time'></i> Mon-Fri 7:00 AM - 6:00 PM</li>
-              <li class="contacts__item"><i class='bx bxs-map-pin'></i> Example Street 01, 61-000 Poznan, Poland</li>
-            </ul>
+            <div class="contacts__text">
+              <h2 class="contacts__title title">FEEL FREE TO CONTACT WITH ME!</h2>
+              <p class="contacts__paragraph paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Voluptate dolores, quasi unde quisquam facilis at ullam 
+                aperiam similique dicta voluptatibus!
+              </p>
+              <ul class="contacts__list">
+                <li class="contacts__item"><i class='bx bxs-phone'></i> +998 94 300 40 55</li>
+                <li class="contacts__item"><i class='bx bxs-envelope' ></i> Pulatovsirotilo@gmail.com</li>
+                <li class="contacts__item"><i class='bx bx-time'></i> Mon-Fri 7:00 AM - 6:00 PM</li>
+                <li class="contacts__item"><i class='bx bxs-map-pin'></i> Example Street 01, 61-000 Poznan, Poland</li>
+              </ul>
+            </div>
           </div>
           <small class="contacts__copyright"> 2021 &copy; All right reserved</small>
         </div>
@@ -226,5 +230,12 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 200,
+          duration: 1000
+      });
+    </script>
 </body>
 </html>
