@@ -104,7 +104,7 @@ button {
 /* HOME PAGE ###################################################### */
 
 #home {
-  width: 100vw im !important;
+  width: 100vw !important;
   height: 100vh !important;
   background: #000;
   background-image: url(../img/bg.jpg);
@@ -979,12 +979,44 @@ textarea {
 
 
 @media (max-width: 767px) {
-    /* CONTACTS */
-    .contact__form {
-      width: 400px;
-      height: 500px;
-    }
-    /* /CONTACTS */
+
+  .home__menu {
+    top: 50px;
+  }
+
+  .home-btn-show {
+    top: 49px;
+    right: 260px;
+    opacity: 1;
+  }
+  .about-btn-show {
+    top: 50px;
+    right: 195px;
+    opacity: 1;
+  }
+  .portfolio-btn-show {
+    top: 50px;
+    right: 130px;
+    opacity: 1;
+  }
+  .contact-btn-show {
+    top: 50px;
+    right: 65px;
+    opacity: 1;
+  }
+
+  .menu__bg {
+    top: 50px;
+    right: 20px;
+    border-radius: 100px;
+  }
+
+  /* CONTACTS */
+  .contact__form {
+    width: 400px;
+    height: 500px;
+  }
+  /* /CONTACTS */
 }
 
 @media (max-width: 576px) {
@@ -1040,7 +1072,7 @@ textarea {
   }
 
   .contact__form {
-    width: 250px;
+    width: 270px;
     height: 500px;
   }
   /* /CONTACTS */
