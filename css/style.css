@@ -1034,6 +1034,11 @@ textarea {
   } 
 
   /* CONTACTS */
+  .contact__form-wrap {
+    top: -75px;
+    left: 0;
+  }
+
   .contact__form {
     width: 250px;
     height: 500px;
