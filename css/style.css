@@ -981,32 +981,32 @@ textarea {
 @media (max-width: 767px) {
 
   .home__menu {
-    top: 50px;
+    top: 60px;
   }
 
   .home-btn-show {
-    top: 49px;
+    top: 59px;
     right: 260px;
     opacity: 1;
   }
   .about-btn-show {
-    top: 50px;
+    top: 60px;
     right: 195px;
     opacity: 1;
   }
   .portfolio-btn-show {
-    top: 50px;
+    top: 60px;
     right: 130px;
     opacity: 1;
   }
   .contact-btn-show {
-    top: 50px;
+    top: 60px;
     right: 65px;
     opacity: 1;
   }
 
   .menu__bg {
-    top: 50px;
+    top: 60px;
     right: 20px;
     border-radius: 100px;
   }
