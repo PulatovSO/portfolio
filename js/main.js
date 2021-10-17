@@ -1,4 +1,7 @@
 
+let form = document.querySelector('.contact__form-wrap');
+let contactInfo = document.querySelector('.contacts__desc');
+
 let menuBtn = document.querySelector('.home__menu');
 let topLine = document.querySelector('.line-top');
 let middleLine = document.querySelector('.line-middle');
@@ -22,6 +25,10 @@ function menuClick() {
   menuBg.classList.toggle('menu-bg-show')
 }
 
+function moveForm() {
+  form.classList.toggle('form-show')
+  contactInfo.classList.toggle('contacts-desc-show')
+}
 
 const cursor = document.querySelector('.cursor');
 
