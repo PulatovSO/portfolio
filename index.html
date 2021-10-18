@@ -26,7 +26,6 @@
 
   <div class="cursor"></div>
   <div id="fullpage">
-
     <div class="section home-section">
       <section id="home">
         <div class="boxes">
@@ -49,10 +48,10 @@
             <div class="menu__line line-bottom"></div>
           </button>
           <div class="home__nav">
-            <a class="menu__button home-button" onclick="homeBtn()"><i class='bx bxs-home'></i><span>home</span></a>
-            <a class="menu__button about-button"  onclick="aboutDrag()"><i class='bx bxs-user-circle'></i><span>about</span></a>
-            <a class="menu__button portfolio-button"  onclick="portfolioDrag()"><i class='bx bxs-shopping-bag-alt'></i><span>portfolio</span></a>
-            <a class="menu__button contact-button"  onclick="contactsDrag()"><i class='bx bxs-envelope'></i><span>contacts</span></a>
+            <a href="#section1" class="menu__button home-button" onclick="homeBtn()"><i class='bx bxs-home'></i><span>home</span></a>
+            <a href="#section2" class="menu__button about-button"  onclick="aboutDrag()"><i class='bx bxs-user-circle'></i><span>about</span></a>
+            <a href="#section3" class="menu__button portfolio-button"  onclick="portfolioDrag()"><i class='bx bxs-shopping-bag-alt'></i><span>portfolio</span></a>
+            <a href="#section4" class="menu__button contact-button"  onclick="contactsDrag()"><i class='bx bxs-envelope'></i><span>contacts</span></a>
           </div>
           <div class="home__text" >
             <span>I am</span>
@@ -294,13 +293,10 @@
             <p class="contacts__paragraph">
               If you have any questions, offers or suggesstions please reach out to me. <br> 
               I look forward to working with you.
-              <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Voluptate dolores, quasi unde quisquam facilis at ullam 
-              aperiam similique dicta voluptatibus! -->
             </p>
             <a class="contacts__desc-btn" href="tel:998943004055"><i class='bx bxs-phone' ></i> <span>+998 94 300 40 55</span></a>
             <a class="contacts__desc-btn" href="https://mail.google.com/" target="_blank"><i class='bx bxs-envelope' ></i> <span>Pulatovsirotillo@gmail.com</span></a>
-            <a class="contacts__desc-btn" href="https://www.google.ru/maps/place/%D0%A2%D0%BE%D1%88%D0%BA%D0%B5%D0%BD%D1%82,+O%60zbekiston/@41.2827706,69.1392809,11z/data=!3m1!4b1!4m5!3m4!1s0x38ae8b0cc379e9c3:0xa5a9323b4aa5cb98!8m2!3d41.2994958!4d69.2400734" target="_blank"><i class='bx bxs-map' ></i> <span>Tashkent, Uzbekistan</span></a>
+            <a class="contacts__desc-btn" href="https://www.google.ru/maps/place/Namangan,+O%60zbekiston/@40.8107212,70.887728,8.6z/data=!4m5!3m4!1s0x38bb4c1b2e60eea5:0x36ef7252c4c12106!8m2!3d41.0057729!4d71.6436028" target="_blank"><i class='bx bxs-map' ></i> <span>Namangan, Uzbekistan</span></a>
           </div>
           <div class="contact__form-wrap">
             <form action="https://echo.htmlacademy.ru" class="contact__form form center-xs" method="POST">
@@ -346,21 +342,7 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
-  <script>
-      var swiper = new Swiper(".mySwiper", {
-        effect: "cube",
-        grabCursor: true,
-        cubeEffect: {
-          shadow: true,
-          slideShadows: true,
-          shadowOffset: 20,
-          shadowScale: 0.94,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      });
-  </script>
+  <script src="js/swiper.js"></script>
 
 </body>
 </html>

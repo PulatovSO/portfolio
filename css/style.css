@@ -121,7 +121,7 @@ button {
 }
 
 
-/* ----------------- */
+/* menu ----------------- */
 
 .home__menu {
   position: absolute;
@@ -923,46 +923,7 @@ textarea {
 
 @media (max-width: 992px) {
 
-  /* MENU ###################### */
-
-  .menu__button span {
-    display: none;
-  }
-
-  .home-btn-show {
-    top: 19px;
-    right: 260px;
-    opacity: 1;
-  }
-  .about-btn-show {
-    top: 20px;
-    right: 195px;
-    opacity: 1;
-  }
-  .portfolio-btn-show {
-    top: 20px;
-    right: 130px;
-    opacity: 1;
-  }
-  .contact-btn-show {
-    top: 20px;
-    right: 65px;
-    opacity: 1;
-  }
-
-  .menu__bg {
-    top: 20px;
-    right: 20px;
-    border-radius: 100px;
-  }
-  
-  .menu-bg-show {
-    width: 600px;
-    height: 120px;
-  }
-  
-  /* MENU ###################### */
-
+ 
 
   /* HOME ###################### */
   #home {
@@ -1061,7 +1022,52 @@ textarea {
 
 @media (max-width: 767px) {
 
-  .home__menu {
+ /* MENU ###################### */
+
+ .menu__button span {
+  display: none;
+}
+
+/* .menu__button i {
+  font-size: 22px;
+} */
+
+.home-btn-show {
+  top: 80px;
+  right: 15px;
+  opacity: 1;
+}
+.about-btn-show {
+  top: 140px;
+  right: 15px;
+  opacity: 1;
+}
+.portfolio-btn-show {
+  top: 200px;
+  right: 15px;
+  opacity: 1;
+}
+.contact-btn-show {
+  top: 260px;
+  right: 15px;
+  opacity: 1;
+}
+
+.menu__bg {
+  top: 20px;
+  right: 20px;
+  border-radius: 100px;
+}
+
+.menu-bg-show {
+  width: 80px;
+  height: 600px;
+}
+
+/* MENU ###################### */
+
+
+  /* .home__menu {
     top: 60px;
   }
 
@@ -1090,7 +1096,7 @@ textarea {
     top: 60px;
     right: 20px;
     border-radius: 100px;
-  }
+  } */
 
   /* CONTACTS */
   .contact__form {
@@ -1128,7 +1134,6 @@ textarea {
     background-size: cover;
     width: 200px;
     height: 300px;
-    border: 1px solid red;
   }
   
   .swiper-slide .portfolio__project {
