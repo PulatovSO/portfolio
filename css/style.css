@@ -1028,27 +1028,23 @@ textarea {
   display: none;
 }
 
-.menu__button i {
-  font-size: 22px;
-}
-
 .home-btn-show {
-  top: 80px;
+  top: 70px;
   right: 15px;
   opacity: 1;
 }
 .about-btn-show {
-  top: 140px;
+  top: 130px;
   right: 15px;
   opacity: 1;
 }
 .portfolio-btn-show {
-  top: 200px;
+  top: 190px;
   right: 15px;
   opacity: 1;
 }
 .contact-btn-show {
-  top: 260px;
+  top: 250px;
   right: 15px;
   opacity: 1;
 }
@@ -1061,7 +1057,7 @@ textarea {
 
 .menu-bg-show {
   width: 80px;
-  height: 600px;
+  height: 570px;
 }
 
 /* MENU ###################### */
