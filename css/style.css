@@ -1028,9 +1028,9 @@ textarea {
   display: none;
 }
 
-/* .menu__button i {
+.menu__button i {
   font-size: 22px;
-} */
+}
 
 .home-btn-show {
   top: 80px;
